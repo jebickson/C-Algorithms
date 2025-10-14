@@ -29,7 +29,7 @@ void main() { // main function
 
     printf("\nPID\tBT\tWT\tTT\n"); // print table header
     for(i = 0; i < n; i++) {
-        printf("P%d\t%d\t%d\t%d\n", p[i].pid, p[i].bt, p[i].wt, p[i].tt); // print process id, burst time, waiting time, turnaround time
+        printf("%d\t%d\t%d\t%d\n", p[i].pid, p[i].bt, p[i].wt, p[i].tt); // print process id, burst time, waiting time, turnaround time
         totwt += p[i].wt; // accumulate total waiting time
         tottt += p[i].tt; // accumulate total turnaround time
     }

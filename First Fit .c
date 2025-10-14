@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include <conio.h>
+//#include <conio.h>
 #define MAX 25 // maximum number of blocks and files
 
 void main() {
     int b[MAX], f[MAX], frag[MAX], bf[MAX] = {0}; // block sizes, file sizes, fragmentation, block free status
-    int nb, nf, i, j; // number of blocks, number of files, loop variables
+    int nb, nf, i, j; // number of blocks, number of files, loop variables 
 
-    clrscr();
+    //clrscr();
     printf("Memory Management Scheme - First Fit\n");// title
     printf("Enter number of blocks: "); // take number of blocks as input
     scanf("%d", &nb); // store input in nb
@@ -41,5 +41,5 @@ void main() {
         }
     }
 
-    getch();
+    //getch();
 }

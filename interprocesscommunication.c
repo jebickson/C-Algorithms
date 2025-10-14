@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <conio.h>
+//#include <conio.h>
 
 void sort(int a[], int n) { // function to sort array
     int i, j, t; // loop variables and temp variable
@@ -19,7 +19,7 @@ void main() { // main function
     FILE *fp; // file pointer
     int i, a[50], n; // loop variable, array to hold numbers, number of elements
 
-    clrscr();
+    //clrscr();
 
     printf("Enter number of elements: "); // prompt for number of elements
     scanf("%d", &n); // read number of elements
@@ -58,5 +58,5 @@ void main() { // main function
         printf("%d ", a[i]); //
     }
 
-    getch(); // wait for key press
+    //getch(); // wait for key press
 }

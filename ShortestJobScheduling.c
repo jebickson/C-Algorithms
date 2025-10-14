@@ -7,13 +7,14 @@ struct process {
 
 void main() {
     int i, j, n, totwt = 0, tottt = 0; // total waiting time and total turnaround time
-    float avg1, avg2; // average waiting time and average turnaround time
+    float avgwt, avgtt; // average waiting time and average turnaround time
     //clrscr();
 
     printf("Enter number of processes: "); // take number of processes as input
     scanf("%d", &n); // store input in n
 
-    for(i = 0; i < n; i++) { // loop to take burst time input for each process
+    for(i = 0; i < n; i++) 
+    { // loop to take burst time input for each process
         p[i].pid = i + 1; // process id
         printf("Enter burst time for P%d: ", i + 1); // prompt for burst time
         scanf("%d", &p[i].bt); // store burst time in process array
@@ -46,11 +47,11 @@ void main() {
         tottt += p[i].tt; // accumulate total turnaround time
     }
 
-    avg1 = (float)totwt / n; // calculate averages of total waiting time  by number of processes
-    avg2 = (float)tottt / n; // calculate averages of total turnaround time by number of processes
+    avgwt = (float)totwt / n; // calculate averages of total waiting time  by number of processes
+    avgtt = (float)tottt / n; // calculate averages of total turnaround time by number of processes
 
-    printf("\nAverage Waiting Time: %.2f", avg1); // print average waiting time
-    printf("\nAverage Turnaround Time: %.2f", avg2); // print average turnaround time
+    printf("\nAverage Waiting Time: %.2f", avgwt); // print average waiting time
+    printf("\nAverage Turnaround Time: %.2f", avgtt); // print average turnaround time
 
     //getch(); 
 }
