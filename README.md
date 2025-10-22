@@ -1,2 +1,2 @@
 # C-Algorithms
-This repo for basic c programming algorithms 
+5th sem-practical programs
